@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="text-center">Hangman</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" style="border: 1px solid red"></div>
+        <div class="col-md-4" style="border: 1px solid red">
+            <img src="" alt="" width="200px" height="200px" style="border: 1px solid red">
+        </div>
+        <div class="col-md-4" style="border: 1px solid red">
+            <div class="row">
+                <h3>Press any key to get started!</h3>
+            </div>
+            <div class="row">
+                <h3>WINS</h3>
+                <p># counter</p>
+            </div>
+            <div class="row">
+                <h3>Current Word</h3>
+                <p>_ _ _ _ _ _</p>
+            </div>
+            <div class="row">
+                <h3>Number of Guesses Remaining</h3>
+                <p># guesses</p>
+            </div>
+            <div class="row">
+                <h3>Letter Already Guessed</h3>
+                <p>letters</p>
+            </div>
+        </div>
+        <div class="col-md-2" style="border: 1px solid red"></div>
+    </div>
+
+    <script>
+        // Declare variables
+        var words = [];
+        var currentWord = [];
+        var guessedLetters = [];
+        var winCounter = 0;
+        var guessCounter = 0;
+
+        // Functions
+
+        // Main Process
+        document.onkeyup = function(event) {
+
+        // Captures the key press, converts it to lowercase, and saves it to a variable.
+        var letter = String.fromCharCode(event.keyCode).toLowerCase();
+
+        // If the letter is h, run the following functions/methods.
+        if (letter === "h") {
+          car.honk();
+          reWriteStats();
+        }
+
+      };
+    </script>
+
+</body>
+</html>
